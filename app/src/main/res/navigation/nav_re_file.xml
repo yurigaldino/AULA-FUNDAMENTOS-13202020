@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_re_file"
+    app:startDestination="@id/acessoFragment">
+
+    <fragment
+        android:id="@+id/acessoFragment"
+        android:name="com.example.aula13032020.AcessoFragment"
+        android:label="fragment_acesso"
+        tools:layout="@layout/fragment_acesso" >
+        <action
+            android:id="@+id/action_acessoFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.aula13032020.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" />
+</navigation>

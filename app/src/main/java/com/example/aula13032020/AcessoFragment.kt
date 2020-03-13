@@ -45,7 +45,7 @@ class AcessoFragment : Fragment() {
                 editTextAcessoEmail.text.equals(usuario!!.email) &&
                 editTextAcessoSenha.text.equals(usuario!!.senha)
                     ) {
-                startActivity(Intent(activity, HomeActivity::class.java))
+                startActivity(Intent(activity, AppActivity::class.java))
             }
         }
 
